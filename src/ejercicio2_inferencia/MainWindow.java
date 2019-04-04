@@ -15,6 +15,7 @@ import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.reasoner.ValidityReport;
 import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.riot.RiotNotFoundException;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.ReasonerVocabulary;
 
@@ -25,7 +26,7 @@ public class MainWindow extends javax.swing.JFrame {
         initComponents();
         reasoner = ReasonerRegistry.getRDFSReasoner();
         reasoner.setDerivationLogging(true);
-        reasoner.setParameter(ReasonerVocabulary.PROPsetRDFSLevel, ReasonerVocabulary.RDFS_SIMPLE);        
+        reasoner.setParameter(ReasonerVocabulary.PROPsetRDFSLevel, ReasonerVocabulary.RDFS_SIMPLE);
     }
 
     @SuppressWarnings("unchecked")
@@ -55,11 +56,6 @@ public class MainWindow extends javax.swing.JFrame {
         dataJLabel.setText("Datos:");
 
         dataJTextField.setText("C:\\Users\\samu_\\Desktop\\SI2\\Pratises\\Ejercicio2_InferenciaConRDFS\\Ejercicio2_Inferencia\\data.ttl");
-        dataJTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dataJTextFieldActionPerformed(evt);
-            }
-        });
 
         schemaJTextField.setText("C:\\Users\\samu_\\Desktop\\SI2\\Pratises\\Ejercicio2_InferenciaConRDFS\\Ejercicio2_Inferencia\\schema.ttl");
 
@@ -176,19 +172,20 @@ public class MainWindow extends javax.swing.JFrame {
                     String schemePath = fc.getSelectedFile().getAbsolutePath();
                     schemaJTextField.setText(schemePath);
                     jTextArea.setText("");
-                }
-                else
+                } else {
                     JOptionPane.showMessageDialog(
                             null,
                             "El formato del fichero debe ser Turtle (.ttl)",
                             "Aviso",
-                            JOptionPane.WARNING_MESSAGE);    
-            } else
+                            JOptionPane.WARNING_MESSAGE);
+                }
+            } else {
                 JOptionPane.showMessageDialog(
                         null,
                         "Su elección no es válida",
                         "Aviso",
                         JOptionPane.WARNING_MESSAGE);
+            }
         }
     }//GEN-LAST:event_schemaJButtonActionPerformed
 
@@ -200,51 +197,48 @@ public class MainWindow extends javax.swing.JFrame {
                     String dataPath = fc.getSelectedFile().getAbsolutePath();
                     dataJTextField.setText(dataPath);
                     jTextArea.setText("");
-                }
-                else
+                } else {
                     JOptionPane.showMessageDialog(
                             null,
                             "El formato del fichero debe ser Turtle (.ttl)",
                             "Aviso",
-                            JOptionPane.WARNING_MESSAGE);    
-            } else
+                            JOptionPane.WARNING_MESSAGE);
+                }
+            } else {
                 JOptionPane.showMessageDialog(
                         null,
                         "Su elección no es válida",
                         "Aviso",
                         JOptionPane.WARNING_MESSAGE);
+            }
         }
     }//GEN-LAST:event_dataJButtonActionPerformed
 
     private void inferedClassRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inferedClassRadioButton1ActionPerformed
-        if (dataJTextField.getText().isEmpty() || schemaJTextField.getText().isEmpty())
+        if (dataJTextField.getText().isEmpty() || schemaJTextField.getText().isEmpty()) {
             JOptionPane.showMessageDialog(
-                        null,
-                        "Debe seleccionar un fichero de datos y otro de esquema.",
-                        "Aviso",
-                        JOptionPane.WARNING_MESSAGE);
-        else {
-            inferIfFilesChange();
-            jTextArea.setText(getInferredClasses());
+                    null,
+                    "Debe seleccionar un fichero de datos y otro de esquema.",
+                    "Aviso",
+                    JOptionPane.WARNING_MESSAGE);
+        } else {
+            if (inferIfFilesChange())
+                jTextArea.setText(getInferredClasses());
         }
     }//GEN-LAST:event_inferedClassRadioButton1ActionPerformed
 
     private void violationConstraintsRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_violationConstraintsRadioButtonActionPerformed
-        if (dataJTextField.getText().isEmpty() || schemaJTextField.getText().isEmpty())
+        if (dataJTextField.getText().isEmpty() || schemaJTextField.getText().isEmpty()) {
             JOptionPane.showMessageDialog(
-                        null,
-                        "Debe seleccionar un fichero de datos y otro de esquema.",
-                        "Aviso",
-                        JOptionPane.WARNING_MESSAGE);
-        else {
-            inferIfFilesChange();
-            jTextArea.setText(getViolationConstraints());
+                    null,
+                    "Debe seleccionar un fichero de datos y otro de esquema.",
+                    "Aviso",
+                    JOptionPane.WARNING_MESSAGE);
+        } else {
+            if (inferIfFilesChange())
+                jTextArea.setText(getViolationConstraints());
         }
     }//GEN-LAST:event_violationConstraintsRadioButtonActionPerformed
-
-    private void dataJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataJTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dataJTextFieldActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -298,10 +292,10 @@ public class MainWindow extends javax.swing.JFrame {
         while (iterador.hasNext()) {
             Statement declaracion = iterador.next();
             result += declaracion.toString() + "\n";
-        }    
+        }
         return result;
     }
-    
+
     private String getViolationConstraints() {
         String result = "";
         ValidityReport validation = inferredGraph.validate();
@@ -317,20 +311,30 @@ public class MainWindow extends javax.swing.JFrame {
         }
         return result;
     }
-    
-    private void inferIfFilesChange() {
+
+    private boolean inferIfFilesChange() {
         String currentDataPath = dataJTextField.getText();
         String currentSchemaPath = schemaJTextField.getText();
         if (!lastDataPath.equals(currentDataPath) || !lastSchemaPath.equals(currentSchemaPath)) {
-            data = RDFDataMgr.loadModel(currentDataPath);
-            schema = RDFDataMgr.loadModel(currentSchemaPath);
-            reasoner = reasoner.bindSchema(schema);
-            inferredGraph = ModelFactory.createInfModel(reasoner, data);
-            lastDataPath = currentDataPath;
-            lastSchemaPath = currentSchemaPath;
+            try {
+                data = RDFDataMgr.loadModel(currentDataPath);
+                schema = RDFDataMgr.loadModel(currentSchemaPath);
+                reasoner = reasoner.bindSchema(schema);
+                inferredGraph = ModelFactory.createInfModel(reasoner, data);
+                lastDataPath = currentDataPath;
+                lastSchemaPath = currentSchemaPath;
+                return true;
+            } catch (RiotNotFoundException e) {
+                JOptionPane.showMessageDialog(
+                    null,
+                    "Alguno de los ficheros seleccionados no es válido",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE);
+            }
         }
+        return false;
     }
-    
+
     private final JFileChooser fc = new JFileChooser();
     private Model data;
     private Model schema;
