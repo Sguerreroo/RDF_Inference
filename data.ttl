@@ -1,0 +1,845 @@
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix rss:   <http://purl.org/rss/1.0/> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix dce:   <http://purl.org/dc/elements/1.1/> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix si2:   <http://www.si2.com/si2/> .
+
+si2:language_German  si2:de  "de" ;
+        vcard:LABEL  "German" .
+
+si2:user_kouichi_ham  vcard:NICKNAME  "kouichi_ham" .
+
+si2:tweet_71  dce:creator  si2:user_7sixteenths ;
+        dce:date        "Wed Apr 03 05:08:34 BST 2019" ;
+        dce:identifier  "1113292182365122561"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @RaceDepartment: He's back! #fernandoalonso to appear in #mclaren colours driving the new #f1 car at the #BahrainGP post race test...!…" .
+
+si2:tweet_50  dce:creator  si2:user_kouichi_ham ;
+        dce:date        "Wed Apr 03 10:09:12 BST 2019" ;
+        dce:identifier  "1113367835734999040"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:user_AlonsoTurkiye
+        vcard:NICKNAME  "AlonsoTurkiye" ;
+        org:location    "Oviedo, España" .
+
+si2:tweet_29  dce:creator  si2:user_f1fanview ;
+        dce:date        "Wed Apr 03 17:02:28 BST 2019" ;
+        dce:identifier  "1113471840477958144"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @22bet_official: Alonso reckons that should an opportunity for a race seat come Mick's way in the next year or two, the youngster should…" .
+
+si2:language_Italian  si2:it  "it" ;
+        vcard:LABEL  "Italian" .
+
+si2:user_OutdoorSportCha
+        vcard:NICKNAME  "OutdoorSportCha" ;
+        org:location    "London" .
+
+si2:tweet_79  dce:creator  si2:user_MotorsportJP ;
+        dce:date        "Wed Apr 03 04:00:09 BST 2019" ;
+        dce:identifier  "1113274961408323584"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:user_coatajp  vcard:NICKNAME  "coatajp" ;
+        org:location    "神奈川" .
+
+si2:tweet_58  dce:creator  si2:user_GPFansNL ;
+        dce:date        "Wed Apr 03 09:21:14 BST 2019" ;
+        dce:identifier  "1113355765211959297"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso: 'Mooi om weer M. Schumacher en Alonso samen op tijdenlijst te zien' https://t.co/Pbr02yBgSR #fernandoalonso #alonso #mickschumacher #schumacher #michaelschumacher #f1 https://t.co/kTQjA5uKn0" .
+
+si2:user_GPFansNL  vcard:NICKNAME  "GPFansNL" .
+
+si2:tweet_37  dce:creator  si2:user_MertIslerr ;
+        dce:date        "Wed Apr 03 13:55:10 BST 2019" ;
+        dce:identifier  "1113424705065766912"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @AlonsoTurkiye: 2005 Bahreyn GP @alo_oficial  🏁🏆 #BahrainGP #tb #f1 #fernandoalonso https://t.co/VbgzwwLCyG" .
+
+si2:user_MotorsportJP
+        vcard:NICKNAME  "MotorsportJP" ;
+        org:location    "東京都" .
+
+si2:user_andreslof  vcard:NICKNAME  "andreslof" ;
+        org:location    "Uruguay" .
+
+si2:tweet_16  dce:creator  si2:user_FormulaTurkiye ;
+        dce:date        "Wed Apr 03 22:04:38 BST 2019" ;
+        dce:identifier  "1113547881280167936"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Turkish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Net şekilde Williams'ın 2019 aracından daha iyi gözüküyor. Katılanlar 😅\n\n#Formula1 #F1 #FARacing #FernandoAlonso #FA14 #FormulaTürkiye https://t.co/JMutRu6TJG" .
+
+si2:user_AlleenF1  vcard:NICKNAME  "AlleenF1" ;
+        org:location    "Oss, Nederland" .
+
+si2:tweet_7  dce:creator  si2:user_abooofooo ;
+        dce:date        "Thu Apr 04 07:57:38 BST 2019" ;
+        dce:identifier  "1113697117397082113"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\nhttps://t.co/zedtSyB8TN\n\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/R95RPLXe…" .
+
+si2:user_F1Gate  vcard:NICKNAME  "F1Gate" ;
+        org:location    "Japan" .
+
+si2:tweet_87  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Tue Apr 02 23:21:03 BST 2019" ;
+        dce:identifier  "1113204727095779331"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Terugkerende Alonso ziet vooruitgang bij #McLaren: \"Auto op alle vlakken beter\" \n#FernandoAlonso #MaxVerstappen\nhttps://t.co/KhCUweSaUU https://t.co/wgTbP5wQc9" .
+
+si2:tweet_66  dce:creator  si2:user_wwwF1sk ;
+        dce:date        "Wed Apr 03 07:27:16 BST 2019" ;
+        dce:identifier  "1113327086356377600"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @marksutton65: Fernando Alonso tests the new McLaren at the Bahrain circuit for Pirelli with fellow Spanish F1 driver Carlos Sainz also…" .
+
+si2:tweet_45  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 11:36:00 BST 2019" ;
+        dce:identifier  "1113389679670366208"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso voorspelt grote toekomst voor Mick Schumacher \n#FernandoAlonso #Ferrari #MaxVerstappen #McLaren #MickSchumacher\nhttps://t.co/AvrD02I7zN https://t.co/0Ech5QqgjA" .
+
+si2:FernandoAlonso  a  si2:topic_F1 .
+
+si2:tweet_24  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 19:10:04 BST 2019" ;
+        dce:identifier  "1113503950026805248"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#Honda teams maken de meeste kilometers op woensdag in Bahrein \n#AlexanderAlbon #CarlosSainz #FernandoAlonso #Ferrari #LanceStroll #McLaren #Mercedes #MickSchumacher #RedBullRacing #SebastianVettel #SergioPerez #ToroRosso\nhttps://t.co/CzhbibGnGh https://t.co/gXv8aUKlMw" .
+
+si2:user_AlertaRacing
+        vcard:NICKNAME  "AlertaRacing" ;
+        org:location    "📸" .
+
+si2:user_emirodriguez_ok
+        vcard:NICKNAME  "emirodriguez_ok" ;
+        org:location    "En 📍Madrid - De ❤️San Rafael" .
+
+si2:user_Lelohunter  vcard:NICKNAME  "Lelohunter" ;
+        org:location    "New York, US/ Sao Paulo, BR" .
+
+si2:tweet_74  dce:creator  si2:user_erg_win ;
+        dce:date        "Wed Apr 03 04:27:29 BST 2019" ;
+        dce:identifier  "1113281839718752256"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @MotorsportJP: アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:tweet_53  dce:creator  si2:user_northhills_love ;
+        dce:date        "Wed Apr 03 10:02:06 BST 2019" ;
+        dce:identifier  "1113366049603198976"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_32  dce:creator  si2:user_TGR_Nogizaka ;
+        dce:date        "Wed Apr 03 15:51:04 BST 2019" ;
+        dce:identifier  "1113453872431869952"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:user_abooofooo  vcard:NICKNAME  "abooofooo" ;
+        org:location    "ようやっとる" .
+
+si2:tweet_11  dce:creator  si2:user_F1journaal ;
+        dce:date        "Thu Apr 04 05:31:05 BST 2019" ;
+        dce:identifier  "1113660235212840961"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso: \"Ik ben de beste, maar dat valt moeilijk te bewijzen\"\n#Alonso #McLarenF1 #FernandoAlonso #debeste #F1\nhttps://t.co/ZeFNE1Zrh4 https://t.co/ZeFNE1Zrh4" .
+
+si2:user_f1fanview  vcard:NICKNAME  "f1fanview" ;
+        org:location    "Worldwide" .
+
+si2:tweet_2  dce:creator  si2:user_amberprkft ;
+        dce:date        "Thu Apr 04 16:15:19 BST 2019" ;
+        dce:identifier  "1113822361147662337"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "@alo_oficial switched to testing mode.💪 First at Bahrein at #F1testing, then went France to test for @Toyota_Hybrid at the wheel of his LMP1.\nPhoto: DPPI\n#F1 #F1news #F1pic  #Forma1 #F1hirek #motorsport #autosport  #amberpr #amber #F1testing #WEC #FernandoAlonso https://t.co/23TMZN2NCk" .
+
+si2:tweet_82  dce:creator  si2:user_marksutton65 ;
+        dce:date        "Wed Apr 03 03:05:47 BST 2019" ;
+        dce:identifier  "1113261282860437505"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Fernando Alonso tests the new McLaren at the Bahrain circuit for Pirelli with fellow Spanish F1 driver Carlos Sainz also running in the 2nd car #FernandoAlonso #CarlosSainz #bahraincircuit #mclaren https://t.co/oQhwkNwbnD" .
+
+si2:tweet_61  dce:creator  si2:user_fetrackchat ;
+        dce:date        "Wed Apr 03 09:04:00 BST 2019" ;
+        dce:identifier  "1113351431472537600"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "F1 return only with title-winning team - Alonso #F1news #FernandoAlonso  https://t.co/uPzcnFwrVW" .
+
+si2:tweet_40  dce:creator  si2:user_CBdeporte ;
+        dce:date        "Wed Apr 03 13:18:22 BST 2019" ;
+        dce:identifier  "1113415442423439362"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#FernandoAlonso: “Creo que soy el mejor piloto del mundo”\nhttps://t.co/C7peFHdsaF" .
+
+si2:user_Amuro_SN  vcard:NICKNAME  "Amuro_SN" .
+
+si2:user_FormulaTurkiye
+        vcard:NICKNAME  "FormulaTurkiye" ;
+        org:location    "Tuzla, İstanbul" .
+
+si2:tweet_19  dce:creator  si2:user_LaRazon_mx ;
+        dce:date        "Wed Apr 03 21:43:49 BST 2019" ;
+        dce:identifier  "1113542641587826689"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "El español #FernandoAlonso, quien actualmente compite en Indycar Series, asegura que es el mejor piloto del mundo 🤔🏎😱 https://t.co/GAYXUf6Cxu https://t.co/1TRTA5Cn1z" .
+
+si2:user_erg_win  vcard:NICKNAME  "erg_win" ;
+        org:location    "下ネタ、エロゲがNGな人はブロック奨励" .
+
+si2:user_carguideph  vcard:NICKNAME  "carguideph" ;
+        org:location    "National Capital Region, Repub" .
+
+si2:tweet_69  dce:creator  si2:user_MSZ_NL ;
+        dce:date        "Wed Apr 03 05:54:43 BST 2019" ;
+        dce:identifier  "1113303794866184194"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_German ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Erg weinig kans op comeback #FernandoAlonso in F1 #Alonso #McLarenF1 https://t.co/Y83grhIova https://t.co/cSkfsHnRX4" .
+
+si2:tweet_48  dce:creator  si2:user_LH_Sena1007 ;
+        dce:date        "Wed Apr 03 10:16:34 BST 2019" ;
+        dce:identifier  "1113369692423380992"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_27  dce:creator  si2:user_Supportalonso_ ;
+        dce:date        "Wed Apr 03 17:17:36 BST 2019" ;
+        dce:identifier  "1113475648339759104"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "It’s always nice to be  active in a Formula 1 car and experience the evolution of the car and  tyres. So everything has been positive and I’m happy.”     \n@alo_oficial #FernandoAlonso #bahrain #f1 #f1testing #pirelli https://t.co/6e32T8RFc1" ;
+        as:inReplyTo    si2:tweet_28 .
+
+si2:user_gundm9317  vcard:NICKNAME  "gundm9317" ;
+        org:location    "愛知の秘境" .
+
+si2:user_GuerraTonatiuh
+        vcard:NICKNAME  "GuerraTonatiuh" ;
+        org:location    "Héroes de Padierna, La Magdalena Contreras" .
+
+si2:tweet_77  dce:creator  si2:user_TGR_Nogizaka ;
+        dce:date        "Wed Apr 03 04:16:35 BST 2019" ;
+        dce:identifier  "1113279098510405632"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ 「MCL34はあらゆる面で前進を果たしている」\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭 https://t.co/aNRsPyqxTr" .
+
+si2:tweet_56  dce:creator  si2:user_F1Admirers ;
+        dce:date        "Wed Apr 03 09:55:42 BST 2019" ;
+        dce:identifier  "1113364440601255937"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Great result!\n--\n#LandoNorris #Norris #CarlosSainz #Sainz #CarlosSainzJr #McLaren #McLarenF1 #McLarenRenault #RenaultF1 #RenaultSportF1 #RenaultSport #McLarenF1Team #McLarenHonda #FernandoAlonso #Alonso #FA14 #Kimoa #Alonso14 #Sakhir #BahrainGP #Silverstone #F1Race #FormulaOne https://t.co/6DAynDwBoy" .
+
+si2:tweet_35  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 14:35:02 BST 2019" ;
+        dce:identifier  "1113434737408868353"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Schumacher denkt nog niet aan F1-debuut: \"Eerst een complete coureur worden\" \n#FernandoAlonso #Ferrari #MaxVerstappen #McLaren\nhttps://t.co/PDHOn84H7f https://t.co/cusnrvO8cB" .
+
+si2:user_PiroroponRacing
+        vcard:NICKNAME  "PiroroponRacing" ;
+        org:location    "リプくれたらフォロバします" .
+
+si2:tweet_14  dce:creator  si2:user_Lelohunter ;
+        dce:date        "Thu Apr 04 01:38:24 BST 2019" ;
+        dce:identifier  "1113601678790529024"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#F1 #Mclaren #Lotus #AyrtonSenna #Senna #FormulaOne #Diecast #TAJBoysToys #Amalgam #Hamilton #JamesHunt #NikiLauda #RedBull #Ferrari #Williams #NigelMansell #FIndy #Race #Drivers #SebastianVettel #FernandoAlonso #Prost #Rosberg #Bottas #Mercedes https://t.co/RKb4JZLyO8" .
+
+si2:language_Norwegian
+        si2:no       "no" ;
+        vcard:LABEL  "Norwegian" .
+
+si2:user_MertIslerr  vcard:NICKNAME  "MertIslerr" ;
+        org:location    "Antalya,Turkey" .
+
+si2:tweet_5  dce:creator  si2:user_franrub23 ;
+        dce:date        "Thu Apr 04 10:11:45 BST 2019" ;
+        dce:identifier  "1113730867455770624"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Visita al museo y circuito de @alo_oficial. Magnifica e impresionante experiencia, que te transporta desde el pasado al presente a través de la exitosa carrera del mejor piloto del mundo!! Gracias!!!!!!!!! #avantifer  #fernandoalonso #grandefernando https://t.co/RXigmuKbWS" .
+
+si2:user_F1Admirers  vcard:NICKNAME  "F1Admirers" .
+
+si2:user_f1world_it  vcard:NICKNAME  "f1world_it" ;
+        org:location    "Milan, Italy" .
+
+si2:user_LaRazon_mx  vcard:NICKNAME  "LaRazon_mx" ;
+        org:location    "México" .
+
+si2:tweet_85  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 00:17:29 BST 2019" ;
+        dce:identifier  "1113218929130921985"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Vijf megasterren die - net als Alonso - de Formule 1 niet konden missen \n#FernandoAlonso #Ferrari #LewisHamilton #McLaren #Mercedes #RedBullRacing\nhttps://t.co/SpDDeDhlgj https://t.co/vRAEclwQRi" .
+
+si2:tweet_64  dce:creator  si2:user_TodoPotencia ;
+        dce:date        "Wed Apr 03 08:39:04 BST 2019" ;
+        dce:identifier  "1113345155665412098"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#FernandoAlonso: “Si algún día vuelvo a la #Formula1 será para ganar algún #Mundial”\nDECLARACIONES: https://t.co/JZl6FFfUhN https://t.co/B9D0hdPL0p" .
+
+si2:tweet_43  dce:creator  si2:user_hagaandfatelove ;
+        dce:date        "Wed Apr 03 12:50:17 BST 2019" ;
+        dce:identifier  "1113408375105118210"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:user_SamDeGoedeCFP
+        vcard:NICKNAME  "SamDeGoedeCFP" .
+
+si2:tweet_22  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 19:34:02 BST 2019" ;
+        dce:identifier  "1113509982341861376"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Russell sluit Formule 1-test Bahrein als snelste af \n#AntonioGiovinazzi #CarlosSainz #FernandoAlonso #Ferrari #GeorgeRussell #McLaren #Mercedes #MickSchumacher #Renault #SebastianVettel #SergioPerez #Williams\nhttps://t.co/iAbTiDsZtt https://t.co/1ElY42bLxb" .
+
+si2:user_FranColapinto
+        vcard:NICKNAME  "FranColapinto" ;
+        org:location    "Comunidad de Madrid, España" .
+
+si2:user_maxxam_T  vcard:NICKNAME  "maxxam_T" ;
+        org:location    "石川県" .
+
+si2:user_fs25spirits  vcard:NICKNAME  "fs25spirits" .
+
+si2:topic_F1  vcard:LABEL  "F1" .
+
+si2:tweet_72  dce:creator  si2:user_S_K_Variante ;
+        dce:date        "Wed Apr 03 04:31:29 BST 2019" ;
+        dce:identifier  "1113282847026974720"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @MotorsportJP: アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:tweet_51  dce:creator  si2:user_yumTK ;
+        dce:date        "Wed Apr 03 10:05:29 BST 2019" ;
+        dce:identifier  "1113366900849790976"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_30  dce:creator  si2:user_22bet_official ;
+        dce:date        "Wed Apr 03 16:59:22 BST 2019" ;
+        dce:identifier  "1113471060148666373"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso reckons that should an opportunity for a race seat come Mick's way in the next year or two, the youngster should not hesitate. https://t.co/AJER7l4Tv0 #f1 #fernandoalonso #ferrari #mickschumacher #commentary #race #sportcars #news #22bet https://t.co/mD643cADJq" .
+
+si2:language_Japanese
+        si2:ja       "ja" ;
+        vcard:LABEL  "Japanese" .
+
+si2:language_Spanish  si2:es  "es" ;
+        vcard:LABEL  "Spanish" .
+
+si2:tweet_80  dce:creator  si2:user_fs25spirits ;
+        dce:date        "Wed Apr 03 03:42:46 BST 2019" ;
+        dce:identifier  "1113270588229935104"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ 「MCL34はあらゆる面で前進を果たしている」\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭 https://t.co/aNRsPyqxTr" .
+
+si2:tweet_59  dce:creator  si2:user_FranColapinto ;
+        dce:date        "Wed Apr 03 09:19:50 BST 2019" ;
+        dce:identifier  "1113355412445769728"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1FeederSeries1: DRIVER ANNOUNCEMENT: @FranColapinto is now officially a @FARACINGTEAM driver and will participate in this year's @F4Sp…" .
+
+si2:user_7sixteenths  vcard:NICKNAME  "7sixteenths" ;
+        org:location    "Liverpool" .
+
+si2:tweet_38  dce:creator  si2:user_AlonsoTurkiye ;
+        dce:date        "Wed Apr 03 13:45:37 BST 2019" ;
+        dce:identifier  "1113422301511540736"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "2005 Bahreyn GP @alo_oficial  🏁🏆 #BahrainGP #tb #f1 #fernandoalonso https://t.co/VbgzwwLCyG" .
+
+si2:tweet_17  dce:creator  si2:user_F1Gate ;
+        dce:date        "Wed Apr 03 22:00:02 BST 2019" ;
+        dce:identifier  "1113546723476082692"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "フェルナンド・アロンソ 「MCL34はあらゆる面で前進を果たしている」\nhttps://t.co/aNRsPyI9i1\n\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭 https://t.co/3STCzl6DEX" .
+
+si2:user_debbienando14
+        vcard:NICKNAME  "debbienando14" ;
+        org:location    "Wiltshire " .
+
+si2:language_French  si2:fr  "fr" ;
+        vcard:LABEL  "French" .
+
+si2:tweet_8  dce:creator  si2:user_jpd_mam23 ;
+        dce:date        "Thu Apr 04 07:33:25 BST 2019" ;
+        dce:identifier  "1113691019856367616"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\nhttps://t.co/zedtSyB8TN\n\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/R95RPLXe…" .
+
+si2:user_F1FeederSeries1
+        vcard:NICKNAME  "F1FeederSeries1" ;
+        org:location    "The paddock" .
+
+si2:user_yumTK  vcard:NICKNAME  "yumTK" ;
+        org:location    "東京 渋谷区" .
+
+si2:tweet_67  dce:creator  si2:user__Narnia_ ;
+        dce:date        "Wed Apr 03 06:21:58 BST 2019" ;
+        dce:identifier  "1113310651890503681"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @marksutton65: Fernando Alonso tests the new McLaren at the Bahrain circuit for Pirelli with fellow Spanish F1 driver Carlos Sainz also…" .
+
+si2:language_Turkish  si2:tr  "tr" ;
+        vcard:LABEL  "Turkish" .
+
+si2:tweet_46  dce:creator  si2:user_emirodriguez_ok ;
+        dce:date        "Wed Apr 03 11:27:07 BST 2019" ;
+        dce:identifier  "1113387444504858624"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1FeederSeries1: DRIVER ANNOUNCEMENT: @FranColapinto is now officially a @FARACINGTEAM driver and will participate in this year's @F4Sp…" .
+
+si2:tweet_25  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 19:07:05 BST 2019" ;
+        dce:identifier  "1113503198969499650"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Norwegian ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Formule 1-test: Russell snelste, Albon ... \n#AlexanderAlbon #CarlosSainz #FernandoAlonso #Ferrari #GeorgeRussell #LanceStroll #LandoNorris #McLaren #Mercedes #MickSchumacher #Renault #RomainGrosjean #SebastianVettel #SergioPerez #ToroRosso #Williams\nhttps://t.co/dqhmHBp1p3 https://t.co/BSsHmkMOKr" .
+
+si2:tweet_75  dce:creator  si2:user_hidden_yard ;
+        dce:date        "Wed Apr 03 04:27:08 BST 2019" ;
+        dce:identifier  "1113281753290919937"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @MotorsportJP: アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:tweet_54  dce:creator  si2:user_maxxam_T ;
+        dce:date        "Wed Apr 03 10:01:16 BST 2019" ;
+        dce:identifier  "1113365841502826496"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_33  dce:creator  si2:user_SamDeGoedeCFP ;
+        dce:date        "Wed Apr 03 15:23:37 BST 2019" ;
+        dce:identifier  "1113446962454511627"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "@alo_oficial \n\n\"I already have 1800 points!\" \n\nWhat a #F1 #Racing #legend!\n\n#FernandoAlonso https://t.co/ru6GVRo5cT" .
+
+si2:tweet_12  dce:creator  si2:user_fs25spirits ;
+        dce:date        "Thu Apr 04 02:29:58 BST 2019" ;
+        dce:identifier  "1113614657351114752"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: マクラーレン：F1バーレーンテスト 2日目レポート\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭https://t.co/y1sKARhmKt" .
+
+si2:user_jpd_mam23  vcard:NICKNAME  "jpd_mam23" ;
+        org:location    "日本・うどんとそうめんの国と晴れの国の隙間" .
+
+si2:tweet_3  dce:creator  si2:user_f1world_it ;
+        dce:date        "Thu Apr 04 15:24:57 BST 2019" ;
+        dce:identifier  "1113809688532004864"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Italian ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "🏁 🇲🇾🏆 #MalaysianGP #f1 #onthisday #bestoftheday #accaddeoggi #amarcord - Il #4aprile #2010 #SebastianVettel vince il gran premio della Malesia, #FernandoAlonso mette sotto sforzo il suo motore e si ferma all'ultimo giro --> https://t.co/hJ1RBJwZyu" .
+
+si2:tweet_83  dce:creator  si2:user_Amuro_SN ;
+        dce:date        "Wed Apr 03 02:25:55 BST 2019" ;
+        dce:identifier  "1113251250265448448"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ 「MCL34はあらゆる面で前進を果たしている」\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭 https://t.co/aNRsPyqxTr" .
+
+si2:tweet_62  dce:creator  si2:user_carguideph ;
+        dce:date        "Wed Apr 03 09:00:09 BST 2019" ;
+        dce:identifier  "1113350460914765825"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Life after F1 must be really boring. #FernandoAlonso #FA14 #Toyota #ToyotaHilux #CarGuidePH https://t.co/Mh4HUv2Avm" .
+
+si2:user_franrub23  vcard:NICKNAME  "franrub23" ;
+        org:location    " " .
+
+si2:tweet_41  dce:creator  si2:user_fs25spirits ;
+        dce:date        "Wed Apr 03 13:09:21 BST 2019" ;
+        dce:identifier  "1113413175435595776"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_20  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 21:10:01 BST 2019" ;
+        dce:identifier  "1113534138726977536"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso: ’Nog nooit iemand sneller geweest’ \n#FernandoAlonso #ForceIndia\nhttps://t.co/8HLV7Rspdi https://t.co/jJmZjTbCMc" .
+
+si2:user_schumi_m_7  vcard:NICKNAME  "schumi_m_7" .
+
+si2:user_TodoPotencia
+        vcard:NICKNAME  "TodoPotencia" .
+
+si2:user_CBdeporte  vcard:NICKNAME  "CBdeporte" ;
+        org:location    "Palma, España" .
+
+si2:tweet_70  dce:creator  si2:user_OutdoorSportCha ;
+        dce:date        "Wed Apr 03 05:17:19 BST 2019" ;
+        dce:identifier  "1113294382864711680"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "🏁#FernandoAlonso has advised #MickSchumacher to take the first #F1 opportunity that comes his way in future years #Formula1 #outdoorsportchannel #outdoorsportchanneltv #motorsport #motorsports https://t.co/v2jMhxRyV2" .
+
+si2:tweet_49  dce:creator  si2:user__cayenne_ ;
+        dce:date        "Wed Apr 03 10:09:20 BST 2019" ;
+        dce:identifier  "1113367870363262976"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_28  dce:creator  si2:user_SupportFAlonso ;
+        dce:date        "Wed Apr 03 17:17:36 BST 2019" ;
+        dce:identifier  "1113475645982609413"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso :“It was positive being back in the car over the past two days.  Hopefully I’ve been able to help the team and Pirelli with its tyre  development, managing almost 70 laps each day." .
+
+si2:user_Supportalonso_
+        vcard:NICKNAME  "Supportalonso_" .
+
+si2:user_PopoloAlonsista
+        vcard:NICKNAME  "PopoloAlonsista" ;
+        org:location    "Genova" .
+
+si2:user_hidden_yard  vcard:NICKNAME  "hidden_yard" .
+
+si2:user__Narnia_  vcard:NICKNAME  "_Narnia_" .
+
+si2:user_SnapLapNews  vcard:NICKNAME  "SnapLapNews" .
+
+si2:user_SuomiF1  vcard:NICKNAME  "SuomiF1" .
+
+si2:tweet_78  dce:creator  si2:user_gundm9317 ;
+        dce:date        "Wed Apr 03 04:08:27 BST 2019" ;
+        dce:identifier  "1113277051916640256"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @MotorsportJP: アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:tweet_57  dce:creator  si2:user_SuomiF1 ;
+        dce:date        "Wed Apr 03 09:39:14 BST 2019" ;
+        dce:identifier  "1113360297123827712"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Finnish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Fernando Alonso jakoi ennustuksensa Mick Schumacherin F1-tulevaisuudesta https://t.co/LkgT0X9ppK #CmoreF1 #F1 #Formula1 #MickSchumacher #FernandoAlonso #Bahraintests #F1tests #F1testdays #Ferrari #Formel1 #Formule1 #F1fi #urheilu" .
+
+si2:tweet_36  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 14:25:22 BST 2019" ;
+        dce:identifier  "1113432305006252033"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Vettel voorlopig snelste op ... \n#AlexanderAlbon #CarlosSainz #FernandoAlonso #Ferrari #GeorgeRussell #LanceStroll #LandoNorris #MaxVerstappen #McLaren #Mercedes #MickSchumacher #Renault #RomainGrosjean #SebastianVettel #SergioPerez #ToroRosso #Williams\nhttps://t.co/8o66yYoIiv https://t.co/CnHvIWGb1w" .
+
+si2:language_Dutch  si2:nl  "nl" ;
+        vcard:LABEL  "Dutch" .
+
+si2:tweet_15  dce:creator  si2:user_coatajp ;
+        dce:date        "Thu Apr 04 00:01:46 BST 2019" ;
+        dce:identifier  "1113577360169754624"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ 「MCL34はあらゆる面で前進を果たしている」\nhttps://t.co/aNRsPyI9i1\n\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭…" .
+
+si2:user_hagaandfatelove
+        vcard:NICKNAME  "hagaandfatelove" ;
+        org:location    "奈良県   " .
+
+si2:tweet_6  dce:creator  si2:user_TodoPotencia ;
+        dce:date        "Thu Apr 04 09:42:16 BST 2019" ;
+        dce:identifier  "1113723448096849920"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#FernandoAlonso: “Creo que soy el mejor #piloto del mundo”.\n#Formula1 #F1 #McLaren \nDECLARACIONES: https://t.co/VQDuqUxNRx https://t.co/hOvMnK7yBS" .
+
+si2:user_LH_Sena1007  vcard:NICKNAME  "LH_Sena1007" ;
+        org:location    "Japan🇯🇵" .
+
+si2:tweet_86  dce:creator  si2:user_LH_Sena1007 ;
+        dce:date        "Tue Apr 02 23:26:49 BST 2019" ;
+        dce:identifier  "1113206177880432640"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ 「MCL34はあらゆる面で前進を果たしている」\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭 https://t.co/aNRsPyqxTr" .
+
+si2:tweet_65  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 07:50:59 BST 2019" ;
+        dce:identifier  "1113333056117575680"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Fernando Alonso complimenteert #McLaren met vooruitgang \n#FernandoAlonso #Ferrari #Mercedes #MickSchumacher\nhttps://t.co/noQFrumUXa https://t.co/AXHJ296swR" .
+
+si2:tweet_44  dce:creator  si2:user_SnapLapNews ;
+        dce:date        "Wed Apr 03 12:01:02 BST 2019" ;
+        dce:identifier  "1113395981322739712"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#WednesdayWisdom :\n\n#FernandoAlonso - \"In life, it's winning - when I go to the supermarket, and I go with a friend, I try to get through the door first. Things like that - everything in life is a competition for me\"\n\nhttps://t.co/NvHdcz17qJ https://t.co/3svQ8pEkTE" .
+
+si2:tweet_23  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 19:25:07 BST 2019" ;
+        dce:identifier  "1113507738645037059"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Russell snelste tijdens tweede testdag Bahrein \n#AlexanderAlbon #CarlosSainz #FernandoAlonso #Ferrari #GeorgeRussell #Honda #LandoNorris #MaxVerstappen #McLaren #Mercedes #MickSchumacher #Renault #SebastianVettel #ToroRosso #Williams\nhttps://t.co/MOCPxQOSZ2 https://t.co/hBUYdoHNdQ" .
+
+si2:user_22bet_official
+        vcard:NICKNAME  "22bet_official" .
+
+si2:user_MSZ_NL  vcard:NICKNAME  "MSZ_NL" ;
+        org:location    "Europe" .
+
+si2:tweet_73  dce:creator  si2:user_LOTUS_S ;
+        dce:date        "Wed Apr 03 04:27:55 BST 2019" ;
+        dce:identifier  "1113281952272965632"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @MotorsportJP: アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:tweet_52  dce:creator  si2:user_kaneko132 ;
+        dce:date        "Wed Apr 03 10:04:47 BST 2019" ;
+        dce:identifier  "1113366728057036800"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:language_English  si2:en  "en" ;
+        vcard:LABEL  "English" .
+
+si2:tweet_31  dce:creator  si2:user_PiroroponRacing ;
+        dce:date        "Wed Apr 03 16:11:47 BST 2019" ;
+        dce:identifier  "1113459083615408129"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_10  dce:creator  si2:user_F1Gate ;
+        dce:date        "Thu Apr 04 07:29:01 BST 2019" ;
+        dce:identifier  "1113689915009773568"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\nhttps://t.co/zedtSyB8TN\n\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/R95RPLXeHs" .
+
+si2:user_primepagineeu
+        vcard:NICKNAME  "primepagineeu" ;
+        org:location    "Catania, Sicily" .
+
+si2:user_kaneko132  vcard:NICKNAME  "kaneko132" ;
+        org:location    "新潟県" .
+
+si2:user_F1journaal  vcard:NICKNAME  "F1journaal" ;
+        org:location    "België" .
+
+si2:tweet_1  dce:creator  si2:user_PopoloAlonsista ;
+        dce:date        "Thu Apr 04 17:01:30 BST 2019" ;
+        dce:identifier  "1113833982922240000"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Italian ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "🏁 🇲🇾🏆 #MalaysianGP #f1 #onthisday #bestoftheday #accaddeoggi #amarcord - Il #4aprile #2010 #SebastianVettel vince il gran premio della Malesia, #FernandoAlonso mette sotto sforzo il suo motore e si ferma all'ultimo giro --> https://t.co/XFwoEtcI2n https://t.co/XFwoEtcI2n" .
+
+si2:user_marksutton65
+        vcard:NICKNAME  "marksutton65" ;
+        org:location    "Northampton, England" .
+
+si2:user_S_K_Variante
+        vcard:NICKNAME  "S_K_Variante" ;
+        org:location    "TEAM BLUE ONE RACINGガレージ" .
+
+si2:user_wwwF1sk  vcard:NICKNAME  "wwwF1sk" ;
+        org:location    "Košice, Slovakia" .
+
+si2:tweet_81  dce:creator  si2:user_AlertaRacing ;
+        dce:date        "Wed Apr 03 03:07:04 BST 2019" ;
+        dce:identifier  "1113261602416070656"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @marksutton65: Fernando Alonso tests the new McLaren at the Bahrain circuit for Pirelli with fellow Spanish F1 driver Carlos Sainz also…" .
+
+si2:tweet_60  dce:creator  si2:user_F1FeederSeries1 ;
+        dce:date        "Wed Apr 03 09:18:48 BST 2019" ;
+        dce:identifier  "1113355153036513280"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "DRIVER ANNOUNCEMENT: @FranColapinto is now officially a @FARACINGTEAM driver and will participate in this year's @F4Spain Championship! #F4 #FernandoAlonso https://t.co/Kt5XkCtcU5" .
+
+si2:tweet_39  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 13:21:01 BST 2019" ;
+        dce:identifier  "1113416110337085440"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Dan Ticktum debuteert in Red Bull RB15 \n#AlexanderAlbon #CarlosSainz #DanielRicciardo #FernandoAlonso #Ferrari #GeorgeRussell #LanceStroll #LandoNorris #McLaren #Mercedes #MickSchumacher #Renault #RomainGrosjean #SebastianVettel #SergioPerez #ToroRosso\nhttps://t.co/eUit5jeq4N https://t.co/r1LBGXkrya" .
+
+si2:user_TGR_Nogizaka
+        vcard:NICKNAME  "TGR_Nogizaka" ;
+        org:location    "NEXT→スーパーGT 2019 富士500キロ？(未定)" .
+
+si2:tweet_18  dce:creator  si2:user_GuerraTonatiuh ;
+        dce:date        "Wed Apr 03 21:54:10 BST 2019" ;
+        dce:identifier  "1113545248435855360"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @LaRazon_mx: El español #FernandoAlonso, quien actualmente compite en Indycar Series, asegura que es el mejor piloto del mundo 🤔🏎😱 https…" .
+
+si2:user_amberprkft  vcard:NICKNAME  "amberprkft" ;
+        org:location    "Budapest, Magyarország" .
+
+si2:user__cayenne_  vcard:NICKNAME  "_cayenne_" ;
+        org:location    "神奈川県在住" .
+
+si2:tweet_9  dce:creator  si2:user_schumi_m_7 ;
+        dce:date        "Thu Apr 04 07:32:15 BST 2019" ;
+        dce:identifier  "1113690727601528833"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\nhttps://t.co/zedtSyB8TN\n\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/R95RPLXe…" .
+
+si2:user_SupportFAlonso
+        vcard:NICKNAME  "SupportFAlonso" .
+
+si2:user_canarias7  vcard:NICKNAME  "canarias7" ;
+        org:location    "Islas Canarias" .
+
+si2:tweet_68  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 06:19:08 BST 2019" ;
+        dce:identifier  "1113309937516593153"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Russell begint aan testdag voor wereldkampioen #Mercedes \n#CarlosSainz #FernandoAlonso #Ferrari #GeorgeRussell #LandoNorris #MaxVerstappen #McLaren #MickSchumacher #RedBullRacing #Renault #SebastianVettel #ToroRosso #Williams\nhttps://t.co/nMdc0mxKBI https://t.co/hCVIajQrao" .
+
+si2:tweet_47  dce:creator  si2:user_yuta020502 ;
+        dce:date        "Wed Apr 03 11:15:05 BST 2019" ;
+        dce:identifier  "1113384418549174273"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @F1Gate: フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_26  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 17:19:02 BST 2019" ;
+        dce:identifier  "1113476007653146624"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_French ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Formule 1-test: Alexander Albon actief in ... \n#AlexanderAlbon #CarlosSainz #FernandoAlonso #Ferrari #GeorgeRussell #LanceStroll #LandoNorris #McLaren #Mercedes #MickSchumacher #Renault #RomainGrosjean #SebastianVettel #SergioPerez #ToroRosso #Williams\nhttps://t.co/BmlqjVF0lV https://t.co/LIdgzCtqcV" .
+
+si2:user_fetrackchat  vcard:NICKNAME  "fetrackchat" ;
+        org:location    "London, England" .
+
+si2:language_Finnish  si2:fi  "fi" ;
+        vcard:LABEL  "Finnish" .
+
+si2:tweet_76  dce:creator  si2:user_abooofooo ;
+        dce:date        "Wed Apr 03 04:17:46 BST 2019" ;
+        dce:identifier  "1113279394355720199"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "RT @MotorsportJP: アロンソ、2019年のマクラーレンを初ドライブ「あらゆる面で前進している」と太鼓判\n#F1jp #F1DAZN #Fernandoalonso #アロンソ #McLarenF1 \nhttps://t.co/ckz6iXhRXP" .
+
+si2:tweet_55  dce:creator  si2:user_F1Gate ;
+        dce:date        "Wed Apr 03 09:58:08 BST 2019" ;
+        dce:identifier  "1113365053070118912"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "フェルナンド・アロンソ、ライバルの息子ミック・シューマッハを称賛\n#F1jp | #F1 | #FernandoAlonso | #MickSchumacher https://t.co/UgUBMdRP2L" .
+
+si2:tweet_34  dce:creator  si2:user_primepagineeu ;
+        dce:date        "Wed Apr 03 15:19:14 BST 2019" ;
+        dce:identifier  "1113445861923667973"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Italian ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Fernando Alonso torna alla guida della McLaren per i test delle gomme Pirelli 2020. Destano interesse le sue dichiarazioni su un possibile ritorno anche nel circo della Formula 1.\n#Formula1 #F1 #McLaren #FernandoAlonso #sport #motori\nhttps://t.co/Tfb95B3V63" .
+
+si2:user_LOTUS_S  vcard:NICKNAME  "LOTUS_S" ;
+        org:location    "On the net" .
+
+si2:tweet_13  dce:creator  si2:user_F1Gate ;
+        dce:date        "Thu Apr 04 02:09:54 BST 2019" ;
+        dce:identifier  "1113609605802647552"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Japanese ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "マクラーレン：F1バーレーンテスト 2日目レポート\n#F1jp | #F1 | #FernandoAlonso | #McLaren | #MCL34 | #F1Testing 🇧🇭https://t.co/y1sKARhmKt" .
+
+si2:tweet_4  dce:creator  si2:user_andreslof ;
+        dce:date        "Thu Apr 04 12:09:00 BST 2019" ;
+        dce:identifier  "1113760375764389888"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Speed and racing: Fernando Alonso comentó que su última temporada en... https://t.co/MnbNcoTL8U #F1 #F1Testing #BahrainGP #fernandoalonso #mclaren" .
+
+si2:user_northhills_love
+        vcard:NICKNAME  "northhills_love" ;
+        org:location    "ありがとうアウォーディー" .
+
+si2:user_yuta020502  vcard:NICKNAME  "yuta020502" ;
+        org:location    "普段は仕事、休みは品川駅前のぱちんこ屋さん、たまに横浜" .
+
+si2:tweet_84  dce:creator  si2:user_Lelohunter ;
+        dce:date        "Wed Apr 03 00:34:45 BST 2019" ;
+        dce:identifier  "1113223272982822912"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#F1 #Mclaren #Lotus #AyrtonSenna #Senna #FormulaOne #Diecast #TAJBoysToys #Amalgam #Hamilton #JamesHunt #NikiLauda #RedBull #Ferrari #Williams #NigelMansell #FIndy #Race #Drivers #SebastianVettel #FernandoAlonso #Prost #Rosberg #Bottas #Mercedes https://t.co/txlloFV4rM" .
+
+si2:tweet_63  dce:creator  si2:user_AlleenF1 ;
+        dce:date        "Wed Apr 03 08:54:00 BST 2019" ;
+        dce:identifier  "1113348914537742336"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Dutch ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "Alonso tevreden met nieuwe #McLaren \n#FernandoAlonso\nhttps://t.co/eECcxpuQbD" .
+
+si2:tweet_42  dce:creator  si2:user_canarias7 ;
+        dce:date        "Wed Apr 03 13:04:44 BST 2019" ;
+        dce:identifier  "1113412010132299776"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_Spanish ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "#Deportes Se siente \"el mejor piloto del mundo\", aunque eso es algo \"difícil de demostrar en la Fórmula 1\". #Formula1 #FernandoAlonso\nhttps://t.co/G6hkxm6Iq0" .
+
+si2:tweet_21  dce:creator  si2:user_debbienando14 ;
+        dce:date        "Wed Apr 03 20:02:55 BST 2019" ;
+        dce:identifier  "1113517253117526017"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        dce:language    si2:language_English ;
+        dce:relation    si2:FernandoAlonso ;
+        rss:textinput   "@McLarenF1 @alo_oficial New phone wallpaper 🧡💙🇪🇸 #F1Testing #FernandoAlonso https://t.co/pIHWTX4uco" .

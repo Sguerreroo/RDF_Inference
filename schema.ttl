@@ -1,0 +1,44 @@
+@prefix si2: <http://www.si2.com/si2/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dce:   <http://purl.org/dc/elements/1.1/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+
+
+si2:Tweet rdf:type rdfs:Class .
+si2:Persona rdf:type rdfs:Class .
+
+dce:identifier
+	rdf:type rdfs:Property ;
+	rdfs:domain si2:Tweet .
+
+si2:TweetRespuesta
+	rdfs:subClassOf si2:Tweet .
+
+as:inReplyTo
+	rdf:type rdfs:Property ;
+	rdfs:domain si2:TweetRespuesta .
+
+dce:date
+	rdf:type rdfs:Property ;
+	rdfs:domain si2:Tweet ;
+	rdfs:range xsd:date .
+
+si2:UsuarioLocalizado
+	rdfs:subClassOf si2:Persona .
+
+org:location
+	rdf:type rdfs:Property ;
+	rdfs:domain si2:UsuarioLocalizado .
+
+si2:apellido
+	rdf:type rdfs:Property ;
+	rdfs:domain si2:Persona ;
+	rdfs:subPropertyOf vcard:nickname .
+
+# PREGUNTAR
+#vcard:nickname
+	
