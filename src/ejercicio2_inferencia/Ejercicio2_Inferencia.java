@@ -23,7 +23,7 @@ import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.ReasonerVocabulary;
 
 public class Ejercicio2_Inferencia {
-
+/*
     public static void main(String[] args) {
         LogCtl.setCmdLogging();
 
@@ -49,7 +49,7 @@ public class Ejercicio2_Inferencia {
         
 //        showDerivationsFormatted(grafoInferido);
     }
-
+*/
     private static void showData(Model data) {
         System.out.println("-----------------SHOW DATA-----------------");
         StmtIterator iterador = data.listStatements();
