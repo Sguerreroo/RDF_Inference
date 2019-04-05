@@ -43,21 +43,18 @@ public class MainWindow extends javax.swing.JFrame {
         schemaJButton = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         violationConstraintsRadioButton = new javax.swing.JRadioButton();
-        inferedClassRadioButton1 = new javax.swing.JRadioButton();
+        inferedClassRadioButton = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         schemaJLabel.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         schemaJLabel.setText("Esquema:");
 
         dataJLabel.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         dataJLabel.setText("Datos:");
-
-        dataJTextField.setText("C:\\Users\\samu_\\Desktop\\SI2\\Pratises\\Ejercicio2_InferenciaConRDFS\\Ejercicio2_Inferencia\\data.ttl");
-
-        schemaJTextField.setText("C:\\Users\\samu_\\Desktop\\SI2\\Pratises\\Ejercicio2_InferenciaConRDFS\\Ejercicio2_Inferencia\\schema.ttl");
 
         dataJButton.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         dataJButton.setText("Buscar");
@@ -86,18 +83,19 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup.add(inferedClassRadioButton1);
-        inferedClassRadioButton1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        inferedClassRadioButton1.setText("Clases Inferidas");
-        inferedClassRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup.add(inferedClassRadioButton);
+        inferedClassRadioButton.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        inferedClassRadioButton.setText("Clases Inferidas");
+        inferedClassRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inferedClassRadioButton1ActionPerformed(evt);
+                inferedClassRadioButtonActionPerformed(evt);
             }
         });
 
         jTextArea.setColumns(20);
         jTextArea.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
         jTextArea.setRows(5);
+        jTextArea.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -124,7 +122,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(violationConstraintsRadioButton)
-                                .addComponent(inferedClassRadioButton1))
+                                .addComponent(inferedClassRadioButton))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
@@ -155,7 +153,7 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(185, 185, 185)
-                        .addComponent(inferedClassRadioButton1)
+                        .addComponent(inferedClassRadioButton)
                         .addGap(18, 18, 18)
                         .addComponent(violationConstraintsRadioButton)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -169,6 +167,7 @@ public class MainWindow extends javax.swing.JFrame {
             if (fc.getSelectedFile().exists() && fc.getSelectedFile().isFile() && fc.getSelectedFile().canRead()) {
                 String absolutePath = fc.getSelectedFile().getAbsolutePath();
                 if (absolutePath.endsWith(".ttl")) {
+                    buttonGroup.clearSelection();
                     String schemePath = fc.getSelectedFile().getAbsolutePath();
                     schemaJTextField.setText(schemePath);
                     jTextArea.setText("");
@@ -194,6 +193,7 @@ public class MainWindow extends javax.swing.JFrame {
             if (fc.getSelectedFile().exists() && fc.getSelectedFile().isFile() && fc.getSelectedFile().canRead()) {
                 String absolutePath = fc.getSelectedFile().getAbsolutePath();
                 if (absolutePath.endsWith(".ttl")) {
+                    buttonGroup.clearSelection();
                     String dataPath = fc.getSelectedFile().getAbsolutePath();
                     dataJTextField.setText(dataPath);
                     jTextArea.setText("");
@@ -214,8 +214,9 @@ public class MainWindow extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_dataJButtonActionPerformed
 
-    private void inferedClassRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inferedClassRadioButton1ActionPerformed
+    private void inferedClassRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inferedClassRadioButtonActionPerformed
         if (dataJTextField.getText().isEmpty() || schemaJTextField.getText().isEmpty()) {
+            buttonGroup.clearSelection();
             JOptionPane.showMessageDialog(
                     null,
                     "Debe seleccionar un fichero de datos y otro de esquema.",
@@ -225,10 +226,11 @@ public class MainWindow extends javax.swing.JFrame {
             if (inferIfFilesChange())
                 jTextArea.setText(getInferredClasses());
         }
-    }//GEN-LAST:event_inferedClassRadioButton1ActionPerformed
+    }//GEN-LAST:event_inferedClassRadioButtonActionPerformed
 
     private void violationConstraintsRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_violationConstraintsRadioButtonActionPerformed
         if (dataJTextField.getText().isEmpty() || schemaJTextField.getText().isEmpty()) {
+            buttonGroup.clearSelection();
             JOptionPane.showMessageDialog(
                     null,
                     "Debe seleccionar un fichero de datos y otro de esquema.",
@@ -275,7 +277,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton dataJButton;
     private javax.swing.JLabel dataJLabel;
     private javax.swing.JTextField dataJTextField;
-    private javax.swing.JRadioButton inferedClassRadioButton1;
+    private javax.swing.JRadioButton inferedClassRadioButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -323,16 +325,17 @@ public class MainWindow extends javax.swing.JFrame {
                 inferredGraph = ModelFactory.createInfModel(reasoner, data);
                 lastDataPath = currentDataPath;
                 lastSchemaPath = currentSchemaPath;
-                return true;
             } catch (RiotNotFoundException e) {
+                buttonGroup.clearSelection();
                 JOptionPane.showMessageDialog(
                     null,
                     "Alguno de los ficheros seleccionados no es válido",
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     private final JFileChooser fc = new JFileChooser();

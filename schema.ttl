@@ -34,11 +34,7 @@ org:location
 	rdf:type rdfs:Property ;
 	rdfs:domain si2:UsuarioLocalizado .
 
-si2:apellido
+vcard:nickname
 	rdf:type rdfs:Property ;
 	rdfs:domain si2:Persona ;
-	rdfs:subPropertyOf vcard:nickname .
-
-# PREGUNTAR
-#vcard:nickname
 	
